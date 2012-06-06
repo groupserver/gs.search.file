@@ -1,0 +1,4 @@
+<link id="gs-search-file-link" 
+  rel="alternate" type="application/atom+xml" title="Files"
+  href="/s/search.atom?t=0&f=1"
+  tal:attributes="title string:Files on ${view/siteInfo/name}"/>

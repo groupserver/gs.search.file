@@ -21,4 +21,13 @@
     weight="20"
     title="Files" />
 
+  <!--The viewlet to link to the Web feed-->
+  <browser:viewlet name="gs-search-file-link"
+    manager="gs.site.home.interfaces.ISiteHomeMetadata"
+    for="Products.GSContent.interfaces.IGSSiteFolder"
+    template="browser/templates/link.pt"
+    class="gs.viewlet.viewlet.SiteViewlet"
+    permission="zope2.View"
+    weight="20"
+    title="File Feed" />
 </configure>
