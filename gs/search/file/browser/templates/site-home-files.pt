@@ -1,6 +1,6 @@
 <div id="gs-search-file-site-home">
   <div class="gs-search search" id="gs-search-file-site-home-search">
-    <div class="gs-search-entry">
+    <div class="gs-search-entry" style="display:none;">
       <input type="text" class="textEntry"/>
       <button>Search</button>
     </div>
