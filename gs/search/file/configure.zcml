@@ -4,4 +4,21 @@
   xmlns:rdb="http://namespaces.zope.org/rdb"
   xmlns:sqlos="http://namespaces.sqlobject.org/sqlos"
   xmlns:five="http://namespaces.zope.org/five">
+
+  <browser:viewlet name="gs-search-file-site-home"
+    manager="gs.site.home.interfaces.ISiteHomeActivity"
+    template="browser/templates/site-home-files.pt"
+    class="gs.viewlet.viewlet.SiteViewlet"
+    permission="zope2.View"
+    weight="20"
+    title="Files" />
+
+  <browser:viewlet name="gs-search-file-site-home-js"
+    manager="gs.site.home.interfaces.ISiteHomeJS"
+    template="browser/templates/site-home-files-js.pt"
+    class="gs.viewlet.viewlet.SiteViewlet"
+    permission="zope2.View"
+    weight="20"
+    title="Files" />
+
 </configure>
