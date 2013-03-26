@@ -1,19 +1,17 @@
-<div id="gs-search-file-site-home-js">
-  <script type="text/javascript">
+<script type="text/javascript" id="gs-search-file-site-home-js">
     jQuery.noConflict();
     jQuery(document).ready( function () {
         var d = {t: '0', f: '1'};
         var filesSearch = GSSearch('#gs-search-file-site-home',
-		           '/s/search.ajax', 0, 6, d, null);
+                           '/s/search.ajax', 0, 6, d, null);
 
         var show_files = function(event, ui) {
             var panel = jQuery(ui.panel);
             if ((panel.attr('id') === 'gs-site-home-activity-tabs-tab-1') && 
                 (!filesSearch.results_shown())) {
                 filesSearch.load();
-	    }
+            }
         };    
         jQuery('#gs-site-home-activity-tabs').bind('tabsshow', show_files);
     });
-  </script>
-</div>
+</script>
