@@ -24,28 +24,35 @@ setup(name='gs.search.file',
     long_description=open("README.txt").read() + "\n" +
                       open(os.path.join("docs", "HISTORY.txt")).read(),
     classifiers=[
-      "Development Status :: 4 - Beta",
-      "Environment :: Web Environment",
-      "Framework :: Zope2",
-      "Intended Audience :: Developers",
-      "License :: Other/Proprietary License",
-      "Natural Language :: English",
-      "Operating System :: POSIX :: Linux"
-      "Programming Language :: Python",
-      "Topic :: Software Development :: Libraries :: Python Modules",
+        'Development Status :: 5 - Production/Stable',
+        "Environment :: Web Environment",
+        "Framework :: Zope2",
+        "Intended Audience :: Developers",
+        'License :: OSI Approved :: Zope Public License',
+        "Natural Language :: English",
+        "Operating System :: POSIX :: Linux"
+        "Programming Language :: Python",
+        "Topic :: Software Development :: Libraries :: Python Modules",
       ],
     keywords='search',
     author='Michael JasonSmith',
     author_email='mpj17@onlinegroups.net',
     url='http://groupserver.org/',
-    license='other',
+    license='ZPL 2.1',
     packages=find_packages(exclude=['ez_setup']),
     namespace_packages=['gs', 'gs.search'],
     include_package_data=True,
     zip_safe=False,
     install_requires=[
         'setuptools',
-        # -*- Extra requirements: -*-
+        'zope.browserpage',
+        'zope.browserresource',
+        'zope.tal',
+        'zope.tales',
+        'zope.viewlet',
+        'gs.search.base',  # For the JS
+        'gs.site.home',
+        'gs.viewlet',
     ],
     entry_points="""
     # -*- Entry points: -*-
