@@ -5,9 +5,9 @@
       <button>Search</button>
     </div>
     <p id="gs-search-file-site-home-loading"
-      class="gs-search-loading" style="display:none;">
-      <img src="/++resource++anim/wait.gif"/>
-      Loading the files
+       class="gs-search-loading" style="display:none;">
+      <span data-icon="&#xe619;" aria-hidden="true" class="loading"> </span>
+      Loading the files&#8230;
     </p><!--gs-search-file-site-home-loading-->
     <div id="gs-search-file-site-home-latest"
          class="gs-search-results">

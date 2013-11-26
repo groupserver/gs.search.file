@@ -7,11 +7,11 @@
 
         var show_files = function(event, ui) {
             var panel = jQuery(ui.panel);
-            if ((panel.attr('id') === 'gs-site-home-activity-tabs-tab-1') && 
+            if ((panel.attr('id') === 'gs-site-home-activity-tabs-tab-1') &&
                 (!filesSearch.results_shown())) {
                 filesSearch.load();
             }
-        };    
+        };
         jQuery('#gs-site-home-activity-tabs').bind('tabsshow', show_files);
     });
 </script>
