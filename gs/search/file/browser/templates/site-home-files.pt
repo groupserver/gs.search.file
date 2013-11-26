@@ -4,30 +4,30 @@
       <input type="text" class="textEntry"/>
       <button>Search</button>
     </div>
-    <p id="gs-search-file-site-home-loading" 
+    <p id="gs-search-file-site-home-loading"
       class="gs-search-loading" style="display:none;">
-      <img src="/++resource++anim/wait.gif"/> 
+      <img src="/++resource++anim/wait.gif"/>
       Loading the files
     </p><!--gs-search-file-site-home-loading-->
-    <div id="gs-search-file-site-home-latest" 
-	 class="gs-search-results">
+    <div id="gs-search-file-site-home-latest"
+         class="gs-search-results">
       &#160;
     </div><!--gs-search-file-site-home-latest-->
-    <div id="gs-search-file-site-home-toolbar" 
-	 class="toolbar gs-search-toolbar">
+    <div id="gs-search-file-site-home-toolbar"
+         class="toolbar gs-search-toolbar">
       <span class="ui-widget-header ui-corner-all">
         <button id="gs-search-file-site-home-toolbar-prev"
-		class="gs-search-toolbar-previous">Newer</button>
+                class="gs-search-toolbar-previous">Newer</button>
         <button id="gs-search-file-site-home-toolbar-next"
-		class="gs-search-toolbar-next">Older</button>
+                class="gs-search-toolbar-next">Older</button>
       </span>
     </div><!--gs-search-file-site-home-toolbar-->
   </div><!--gs-search-->
   <div id="gs-search-file-site-home-tasks">
     <ul class="inline-list">
       <li><a type="application/atom+xml" class="alternateATOM"
-	     tal:define="title string:Posts in ${view/siteInfo/name};"
-	     href="/s/search.atom?t=0&amp;f=1&amp;p=0">Web feed</a></li>
+             tal:define="title string:Posts in ${view/siteInfo/name};"
+             href="/s/search.atom?t=0&amp;f=1&amp;p=0">Web feed</a></li>
     </ul>
   </div><!--gs-search-file-site-home-tasks-->
 </div><!--gs-search-file-site-home-->
